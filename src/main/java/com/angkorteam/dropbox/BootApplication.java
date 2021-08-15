@@ -1,9 +1,9 @@
 package com.angkorteam.dropbox;
 
+import com.angkorteam.webui.frmk.function.BootExtension;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 public class BootApplication {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(BootApplication.class, args);
+        BootExtension.run(BootApplication.class, args);
     }
 
     @Bean
