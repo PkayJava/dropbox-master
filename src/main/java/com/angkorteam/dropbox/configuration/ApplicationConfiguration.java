@@ -7,7 +7,7 @@ import java.io.File;
 
 @Configuration
 @ConfigurationProperties(prefix = "app", ignoreUnknownFields = true)
-public class ApplicationProperties {
+public class ApplicationConfiguration {
 
     private File workspace;
 

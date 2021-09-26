@@ -1,6 +1,6 @@
 package com.angkorteam.dropbox;
 
-import com.angkorteam.dropbox.configuration.ApplicationProperties;
+import com.angkorteam.dropbox.configuration.ApplicationConfiguration;
 import com.google.gson.Gson;
 import okhttp3.OkHttpClient;
 import org.apache.commons.io.FileUtils;
@@ -42,7 +42,7 @@ public class FileController {
     private Gson gson;
 
     @Autowired
-    private ApplicationProperties properties;
+    private ApplicationConfiguration properties;
 
     @Autowired
     private OkHttpClient client;
